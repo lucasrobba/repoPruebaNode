@@ -17,9 +17,8 @@ p{
     font-size: 12px;
 }
 
-div.top-header{
+.top-header{
     display: flex;
-    flex-wrap: wrap;
     padding: 5%;
 }
 
@@ -122,6 +121,22 @@ h3,
     margin-top: 20px;
 }
 
+.main-article:hover .description{
+    display: block;
+}
+
+article:hover{
+    box-shadow: 30px rgb(37, 151, 151);
+}
+
+.fas {
+    transition: 3s;
+}
+main .fas:hover{
+    transform: rotateZ(-90deg);
+}
+
+
 section.banner img{
     width: 100%;
 }
@@ -163,6 +178,9 @@ main section h3{
     margin: 20px 0px;
 }
 
+
+
+
 article div.main-article{
     width: 100%;
     display: flex;
@@ -173,7 +191,49 @@ article div.main-article{
     padding: 15px;
 }
 
-@media (min-width: 361px){
+.boton-enviar:hover{
+    background-color: #0022AA;
+    color: white;
+}
+
+.top-footer{
+    display: flex;
+       
+}
+ 
+footer{
+    margin: 30px 2%;
+    }
+
+footer i{
+    color:#0022AA;
+    margin-left: 45%;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: 3ml;
+}
+
+footer i:hover{
+    color:#39b54a
+}
+
+footer h4, footer p{
+    text-align: center;
+    margin: 10px
+}
+
+
+footer h6{
+    margin-top: 10px; 
+}
+
+form{
+    margin: 15px;
+}
+
+
+
+@media (min-width: 375px){
     main section article .description{
         display: block;
     }
@@ -198,10 +258,66 @@ article div.main-article{
     .discount{
         width: 50%;
     }
+    
+    .top-header{
+        display: flex;
+    }
+
+    .ingreso{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .usuario, .clave{
+        width: 80%;
+        border-radius: 5%;
+        margin: 20px;
+        padding: 5px;
+    }
+    .boton-enviar{
+        width: 80%;
+        border-radius: 5%;
+        padding: 5px;
+        margin: 20px;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
 }
 
 @media (min-width: 769px){
     main section div.products article{
         width: 22%;
+    }
+
+    .top-header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header div .logo{
+        width: 33%;
+    }
+
+    .compra-en-cuotas{
+        max-width: 350px;
+        text-align: right;
+        font-size: 22px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    li{
+        margin: 5px;
     }
 }
